@@ -135,6 +135,9 @@ body {
 #main p{
     font-family: miniSerifRegular;
     font-size: 18px;
+}
+.mini_blue_block p,
+.mini_red_block p{
     margin-bottom: 40px;
 }
 #main_block span{

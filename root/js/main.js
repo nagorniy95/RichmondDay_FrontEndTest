@@ -15,9 +15,24 @@ const getJSON = (url, callback) => {
 
 const displayData = (data) => {
     let carList = data.reduce((list, item, index) => {
-        const h3Class = index % 2 === 0 ? 'odd' : 'even'
-        const currentItem = `<div class="col-md-6"><h3 class=${h3Class}>${item.Name}</h3></div>`;    
-        list += currentItem
+        const h3Class = index % 2 === 0 ? 'odd' : 'even';
+        const currentItem = `<div class="col-md-6">
+                                <a href="#" targer="_blank">
+                                    <h3>${item.Name}</h3>
+                                </a>
+                                <p>${item.Price}</p>
+                                <img width="100%" height="auto" src="img/99b0164a-089e-400b-9b89-42718e30db4a.jpg" alt="mini cupper">
+                                <p>${item.Retailer}</p>
+                                <p>${item.Kilometres}</p>
+                                <p>${item.Transmission}</p>
+                                <p>${item.Exterior}</p>
+                                <p>${item.Interior}</p>
+                                <p>${item.VIN}</p>
+                                <p>${item.DriveTrain}</p>
+                                <button>View Details</button>
+                                <button>Book Test Drive</button>
+                            </div>`;    
+        list += currentItem;
         return list;
     }, '');
     
