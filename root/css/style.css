@@ -212,3 +212,11 @@ body {
     margin: 0 auto;
     background-color: #e2e2e2;
 }
+
+.odd {
+    color: pink;
+}
+
+.even {
+    color: yellow;
+}
