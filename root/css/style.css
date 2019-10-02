@@ -112,13 +112,20 @@ body {
 /* ========================================= */
 /* ================ Main =================== */
 /* ========================================= */
+/* content wrapper for the main section with 1400px width */
 #main-wrap{
     max-width: 1400px;
     margin: 0 auto;
 }
+/* Top padding for main section and first block of this section */
 #main,
 .mini_blue_block{
     margin-top: 65px;
+}
+/* Fonts for the main section conternt */
+#main_block h2{
+    font-size: 60px;
+    font-family:  miniSerifBold;
 }
 #main h3{
     font-family: miniSerifBold;
@@ -134,6 +141,7 @@ body {
     font-size: 22px;
     font-family:  miniSerifRegular;
 }
+/* Button styles */
 #main_block button{
     width: 150px;
     font-size: 16px;
@@ -147,35 +155,36 @@ body {
     margin-bottom: 10px;
     transition: all .5s ease;
 }
+/* Button hover effect */
 #main_block button:hover{
     background-color: #535353;
 }
-#main_block h2{
-    font-size: 60px;
-    font-family:  miniSerifBold;
-}
+/* Padding for content area */
 .mini_blue_block_content,
 .mini_red_block_content{
     padding: 35px;
 }
-.mini_blue_block img,
-.mini_red_block img{
-    height: auto;
-    width: 100%;
-}
-.mini_blue_backgroound{
+/* Background image for 2 blocks of contern */
+.mini_blue_backgroound,
+.mini_red_background{
     width: auto;
-    min-height: 365px;
-    background-image: url(../img/THE-MINI-COUNTRYMAN-ALL4-blue.png);
+    min-height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.mini_blue_backgroound{
+    background-image: url(../img/THE-MINI-COUNTRYMAN-ALL4-blue.png);
+}
+.mini_red_background{
+    background-image: url(../img/THE-MINI-COUNTRYMAN-ALL4-red.png)
+}
 /* always display content in the middle of the "mini blue block" */
-#mini_blue_block_parant{ /* parant */
+#mini_blue_block_parant, /* parant blue */
+#mini_red_block_parant{ /* parant red */
     position: relative;
     width: 100%;
-    min-height: 365px;
+    min-height: 400px;
 }
 .mini_blue_block_content{ /* child */
     max-width: 550px;
@@ -185,8 +194,11 @@ body {
     transform: translateY(-50%);
 }
 /* always display content in the middle of the "mini red block" */
-.mini_red_block_content{ /* parant */
+.mini_red_block_content{ /* child */
     max-width: 620px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* =========================================== */
