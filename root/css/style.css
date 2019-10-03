@@ -8,51 +8,50 @@ input, textarea, select {margin:0; padding:0px; } ul{padding: 0;}
 
 /* ================================= Fonts ================================= */
 @font-face {
-  font-family: miniSerifBold;
-  src: url("../fonts/MINI-Serif/mini_serif-bold-webfont.eot");
-  src: url("../fonts/MINI-Serif/mini_serif-bold-webfont.woff") format("woff");
-  src: url("../fonts/MINI-Serif/mini_serif-bold-webfont.woff2") format("woff2");
+    font-family: miniSerifBold;
+    src: url("../fonts/MINI-Serif/mini_serif-bold-webfont.eot");
+    src: url("../fonts/MINI-Serif/mini_serif-bold-webfont.woff") format("woff");
+    src: url("../fonts/MINI-Serif/mini_serif-bold-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: miniSerifItalic;
-  src: url("../fonts/MINI-Serif/mini_serif-italic-webfont.eot");
-  src: url("../fonts/MINI-Serif/mini_serif-italic-webfont.woff") format("woff");
-  src: url("../fonts/MINI-Serif/mini_serif-italic-webfont.woff2") format("woff2");
+    font-family: miniSerifItalic;
+    src: url("../fonts/MINI-Serif/mini_serif-italic-webfont.eot");
+    src: url("../fonts/MINI-Serif/mini_serif-italic-webfont.woff") format("woff");
+    src: url("../fonts/MINI-Serif/mini_serif-italic-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: miniSerifRegular;
-  src: url("../fonts/MINI-Serif/mini_serif-regular-webfont.eot");
-  src: url("../fonts/MINI-Serif/mini_serif-regular-webfont.woff") format("woff");
-  src: url("../fonts/MINI-Serif/mini_serif-regular-webfont.woff2") format("woff2");
+    font-family: miniSerifRegular;
+    src: url("../fonts/MINI-Serif/mini_serif-regular-webfont.eot");
+    src: url("../fonts/MINI-Serif/mini_serif-regular-webfont.woff") format("woff");
+    src: url("../fonts/MINI-Serif/mini_serif-regular-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: miniSerifMedium;
-  src: url("../fonts/MINI-Sans/mini_sans-medium-webfont.eot");
-  src: url("../fonts/MINI-Sans/mini_sans-medium-webfont.woff") format("woff");
-  src: url("../fonts/MINI-Sans/mini_sans-medium-webfont.woff2") format("woff2");
+    font-family: miniSerifMedium;
+    src: url("../fonts/MINI-Sans/mini_sans-medium-webfont.eot");
+    src: url("../fonts/MINI-Sans/mini_sans-medium-webfont.woff") format("woff");
+    src: url("../fonts/MINI-Sans/mini_sans-medium-webfont.woff2") format("woff2");
 }
+
 /* ========================================================================= */
 /* General Styles */
 html {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    height: 100%;
-    margin: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
     -webkit-box-sizing: inherit;
-       -moz-box-sizing: inherit;
-            box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
 }
 
-body {
-    height: 100%;
-}
-.bold{
+.bold {
     font-family: miniSerifBold;
 }
 
@@ -63,7 +62,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-#header_block{
+
+#header_block {
     margin-top: 45px;
     padding-top: 150px;
     height: 660px;
@@ -74,30 +74,29 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    vertical-align:middle;
+    vertical-align: middle;
 }
-#header_block span{
+
+#header_block span {
     font-family: miniSerifRegular;
     text-transform: uppercase;
-    font-weight: 500;
     font-size: 22px;
     color: #fff;
 }
-#header_block h1{
+
+#header_block h1 {
     font-family: miniSerifBold;
     text-transform: uppercase;
-    font-weight: 600;
     font-size: 60px;
     color: #fff;
 }
-#header_block iframe{
-    display: none;
-}
-#header_content{
+
+#header_content {
     margin-top: 150px;
 }
+
 /* Video play button */
-#play{
+.play {
     margin-top: 50px;
     height: 100px;
     width: 100px;
@@ -106,9 +105,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100%;
+    -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
-#play:hover{
+
+.play:hover {
     border: 4px solid rgb(105, 105, 105);
 }
 
@@ -116,150 +117,291 @@ body {
 /* ================ Main =================== */
 /* ========================================= */
 /* content wrapper for the main section with 1400px width */
-#main-wrap{
+#main-wrap {
     max-width: 1400px;
     margin: 0 auto;
 }
+
+.mini_blue_mobile,
+.mini_red_mobile {
+    display: none;
+}
+
 /* Top padding for main section and first block of this section */
 #main,
-.mini_blue_block{
+.mini_blue_block {
     margin-top: 65px;
 }
+
 /* Fonts for the main section conternt */
-#main_block h2{
+#main_block h2 {
     font-size: 60px;
-    font-family:  miniSerifBold;
+    font-family: miniSerifBold;
 }
-#main h3{
+
+#main h3 {
     font-family: miniSerifBold;
     font-size: 30px;
     margin-bottom: 25px;
 }
-#main p{
+
+#main p {
     font-family: miniSerifRegular;
     font-size: 18px;
 }
+
 .mini_blue_block p,
-.mini_red_block p{
+.mini_red_block p {
     margin-bottom: 40px;
 }
-.subhead{
+
+.subhead {
     font-size: 22px;
-    font-family:  miniSerifRegular;
+    font-family: miniSerifRegular;
 }
+
 /* Button styles */
-#main_block button{
+#main_block button {
     width: 150px;
     font-size: 16px;
     line-height: 12px;
-    font-family:  miniSerifMedium;
+    font-family: miniSerifMedium;
     text-transform: uppercase;
     padding: 15px;
     background-color: #000;
     color: #fff;
     display: block;
     margin-bottom: 10px;
+    -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
+
 /* Button hover effect */
-#main_block button:hover{
+#main_block button:hover {
     background-color: #535353;
 }
+
 /* Padding for content area */
 .mini_blue_block_content,
-.mini_red_block_content{
+.mini_red_block_content {
     padding: 35px;
 }
+
 /* Background image for 2 blocks of contern */
 .mini_blue_backgroound,
-.mini_red_background{
+.mini_red_background {
     width: auto;
     min-height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.mini_blue_backgroound{
+
+.mini_blue_backgroound {
     background-image: url(../img/THE-MINI-COUNTRYMAN-ALL4-blue.png);
 }
-.mini_red_background{
+
+.mini_red_background {
     background-image: url(../img/THE-MINI-COUNTRYMAN-ALL4-red.png)
 }
+
 /* always display content in the middle of the "mini blue block" */
-#mini_blue_block_parant, /* parant blue */
-#mini_red_block_parant{ /* parant red */
+#mini_blue_block_parant,
+#mini_red_block_parant {
     position: relative;
     width: 100%;
     min-height: 400px;
 }
-.mini_blue_block_content{ /* child */
+
+.mini_blue_block_content {
     max-width: 550px;
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
+
 /* always display content in the middle of the "mini red block" */
-.mini_red_block_content{ /* child */
+.mini_red_block_content {
     max-width: 620px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
+
 /* JSON section  */
-#json_container{
+#json_container {
     max-width: 850px;
     margin: 0 auto;
 }
-#json_data{
+
+#json_data {
     margin-top: 100px;
 }
-#json_data button{
+
+#json_data button {
     width: 100%;
 }
-#json_data h3{
+
+#json_data h3 {
     font-family: miniSerifRegular;
     font-size: 24px;
 }
-#json_data img{
+
+#json_data img {
     margin: 20px 0 30px 0;
 }
+
 #json_data a {
     color: #000;
     text-decoration: underline;
 }
-#json_content_block{
+
+#json_content_block {
     margin: 0 50px 0 50px;
 }
-.price{
+
+.price {
     font-size: 24px !important;
 }
-.interior{
+
+.interior {
     margin: 30px 0;
 }
-.drive_train{
+
+.drive_train {
     margin-bottom: 35px;
 }
 
 /* =========================================== */
 /* ================ Footer =================== */
 /* =========================================== */
-#footer{
+#footer {
     margin-top: 100px;
 }
-#footer p{
-    font-size: 12px;
+
+#footer p {
+    font-size: .8em;
     font-family: miniSerifMedium;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
+    padding: 5px 0;
     background-color: #e2e2e2;
 }
 
-.odd {
-    color: pink;
-}
+@media only screen and (max-width: 767px) {
+    #header {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
-.even {
-    color: yellow;
+    #header_block {
+        margin-top: 12px;
+        padding-top: 25px;
+        width: 100%;
+        height: 150px;
+    }
+
+    #header_block span {
+        font-size: 18px;
+    }
+
+    #header_block h1 {
+        font-size: 22px;
+    }
+
+    /* Video play button */
+    .play {
+        margin-top: 12px;
+        height: 30px;
+        width: 30px;
+    }
+
+    /* Top padding for main section and first block of this section */
+    #main,
+    .mini_blue_block {
+        margin-top: 35px;
+    }
+
+    /* Fonts for the main section conternt */
+    #main_block h2 {
+        font-size: 36px;
+    }
+
+    #main h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .mini_blue_block p,
+    .mini_red_block p {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .subhead {
+        font-size: 18px;
+    }
+
+    /* Button styles */
+    #main_block button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Padding for content area */
+    .mini_blue_block_content,
+    .mini_red_block_content {
+        padding: 20px;
+    }
+
+    /* Background image for 2 blocks of contern */
+    .mini_blue_backgroound,
+    .mini_red_background {
+        display: none;
+    }
+
+    .mini_blue_mobile,
+    .mini_red_mobile {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #mini_blue_block_parant,
+    #mini_red_block_parant {
+        width: 100%;
+    }
+
+    .mini_blue_block_content {
+        max-width: 100%;
+        position: inherit;
+        right: auto;
+        top: default;
+        -webkit-transform: none;
+                transform: none;
+    }
+
+    .mini_red_block_content {
+        max-width: 100%;
+        position: inherit;
+        top: default;
+        -webkit-transform: none;
+                transform: none;
+    }
+
+    #json_content_block {
+        margin: 0 20px;
+    }
+    #json_content_block h3:last-child{
+        margin-top: 20px;
+    }
+
+    #json_data {
+        margin-top: 45px;
+    }
+
 }

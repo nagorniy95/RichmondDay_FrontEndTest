@@ -7,15 +7,17 @@
     <title>THE MINI ALL4 LINEUP</title>
     <!-- Description -->
     <meta name="description" content="The rugged adventurer for living life to the fullest. Equipped with ample interior space and an array of practical features, it’s designed to both inspire and accommodate your next great story." />
-    <!-- Favicon -->
-    <link rel="icon" href="#" type="image/png" />
     <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- For IE 9 support -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- For YouTube video box-->
+    <link rel="stylesheet" href="css/video.popup.css" />
+    <!-- For IE support -->
     <!--[if lt IE 9]>
         <script src="js/html5.js"></script>
         <script src="js/css3-mediaqueries.js"></script>
@@ -29,8 +31,7 @@
             <div id="header_block">
                 <span>WATCH AND LEARN.</span>
                 <h1>ALL4 EXPLAINED.</h1>
-                <button id="play"></button>
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ldjmb15Jsx0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button id="video" class="play" video-url="https://www.youtube.com/embed/Ldjmb15Jsx0"></button>
             </div>
         </header>
 
@@ -39,7 +40,7 @@
             <div id="main-wrap">
                 <div id="main_block">
                     <div class="row">
-                        <div class="col-md-12 text-center">
+                        <div class="text-center">
                             <span class="subhead">TAKE YOUR PICK.</span>
                             <h2>THE MINI ALL4 LINEUP.</h2>
                         </div>
@@ -47,8 +48,9 @@
                     <!-- First Content Section (mini blue) -->
                     <section class="mini_blue_block">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6 col-xs-12">
                                 <div id="mini_blue_block_parant">
+                                   <img class="mini_blue_mobile" src="img/THE-MINI-COUNTRYMAN-ALL4-blue.png" alt="The mini countryman all4 blue">
                                     <div class="mini_blue_block_content">
                                         <h3>THE MINI COUNTRYMAN ALL4.</h3>
                                         <p>The rugged adventurer for living life to the fullest. Equipped with ample interior space and an array of practical features, it’s designed to both inspire and accommodate your next great story.</p>
@@ -57,7 +59,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6 col-xs-12">
                                 <div class="mini_blue_backgroound"></div>
                             </div>
                         </div>
@@ -65,11 +67,12 @@
                     <!-- Second Content Section (mini red) -->
                     <section class="mini_red_block">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6 col-xs-12">
                                 <div class="mini_red_background"></div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6 col-xs-12">
                                 <div id="mini_red_block_parant">
+                                   <img class="mini_red_mobile" src="img/THE-MINI-COUNTRYMAN-ALL4-red.png" alt="The mini countryman all4 red">
                                     <div class="mini_red_block_content">
                                         <h3>THE MINI CLUBMAN ALL4.</h3>
                                         <p>The most refined MINI ever made, featuring an exquisitely-crafted cabin outfitted with top-shelf finishes and cutting-edge technology. Spacious and sophisticated; premium yet practical; it’s the MINI for every occasion.</p>
@@ -96,7 +99,10 @@
         </footer>
     </div>
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- JavaScript code   -->
     <script src="js/main.js"></script>
-</body></html>
+    <script src="js/video.popup.js"></script>
+</body>
+
+</html>
