@@ -26,81 +26,80 @@
 
 <body>
     <!-- ====================  Header section ==================== -->
-    <div id="page_wrapper">
-        <header id="header">
-            <div id="header_block">
-                <span>WATCH AND LEARN.</span>
-                <h1>ALL4 EXPLAINED.</h1>
-                <button id="video" class="play" video-url="https://www.youtube.com/embed/Ldjmb15Jsx0"></button>
-            </div>
-        </header>
+    <header id="header">
+        <div id="header_block">
+            <span>WATCH AND LEARN.</span>
+            <h1>ALL4 EXPLAINED.</h1>
+            <button id="video" class="play" video-url="https://www.youtube.com/embed/Ldjmb15Jsx0"></button>
+        </div>
+    </header>
 
-        <!-- ====================  Main section ==================== -->
-        <main id="main">
-            <div id="main-wrap">
-                <div id="main_block">
-                    <div class="row">
-                        <div class="text-center">
-                            <span class="subhead">TAKE YOUR PICK.</span>
-                            <h2>THE MINI ALL4 LINEUP.</h2>
-                        </div>
-                    </div>
-                    <!-- First Content Section (mini blue) -->
-                    <section class="mini_blue_block">
-                        <div class="row">
-                            <div class="col-sm-6 col-xs-12">
-                                <div id="mini_blue_block_parant">
-                                   <img class="mini_blue_mobile" src="img/THE-MINI-COUNTRYMAN-ALL4-blue.png" alt="The mini countryman all4 blue">
-                                    <div class="mini_blue_block_content">
-                                        <h3>THE MINI COUNTRYMAN ALL4.</h3>
-                                        <p>The rugged adventurer for living life to the fullest. Equipped with ample interior space and an array of practical features, it’s designed to both inspire and accommodate your next great story.</p>
-                                        <button>Learn More</button>
-                                        <button>Build &amp; Price</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-xs-12">
-                                <div class="mini_blue_backgroound"></div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Second Content Section (mini red) -->
-                    <section class="mini_red_block">
-                        <div class="row">
-                            <div class="col-sm-6 col-xs-12">
-                                <div class="mini_red_background"></div>
-                            </div>
-                            <div class="col-sm-6 col-xs-12">
-                                <div id="mini_red_block_parant">
-                                   <img class="mini_red_mobile" src="img/THE-MINI-COUNTRYMAN-ALL4-red.png" alt="The mini countryman all4 red">
-                                    <div class="mini_red_block_content">
-                                        <h3>THE MINI CLUBMAN ALL4.</h3>
-                                        <p>The most refined MINI ever made, featuring an exquisitely-crafted cabin outfitted with top-shelf finishes and cutting-edge technology. Spacious and sophisticated; premium yet practical; it’s the MINI for every occasion.</p>
-                                        <button>Learn More</button>
-                                        <button>Build &amp; Price</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Third content section from json file -->
-                    <div id="json_container">
-                        <div class="row">
-                            <div id="json_data"></div>
-                        </div>
-                    </div>
+    <!-- ====================  Main section ==================== -->
+    <main id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <span class="subhead">TAKE YOUR PICK.</span>
+                    <h2>THE MINI ALL4 LINEUP.</h2>
                 </div>
             </div>
-        </main>
+        </div>
+        <div class="container-fluid">
+            <!-- First Content Section (mini blue) -->
+            <div class="row">
+                <section class="mini_blue_block">
+                    <div class="col-sm-6 col-xs-12">
+                        <div id="mini_blue_block_parant">
+                            <img class="mini_blue_mobile" src="img/THE-MINI-COUNTRYMAN-ALL4-blue.png" alt="The mini countryman all4 blue">
+                            <div class="mini_blue_block_content">
+                                <h3>THE MINI COUNTRYMAN ALL4.</h3>
+                                <p>The rugged adventurer for living life to the fullest. Equipped with ample interior space and an array of practical features, it’s designed to both inspire and accommodate your next great story.</p>
+                                <button>Learn More</button>
+                                <button>Build &amp; Price</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="mini_blue_backgroound"></div>
+                    </div>
+                </section>
+            </div>
+            <!-- Second Content Section (mini red) -->
+            <div class="row">
+                <section class="mini_red_block">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="mini_red_background"></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div id="mini_red_block_parant">
+                            <img class="mini_red_mobile" src="img/THE-MINI-COUNTRYMAN-ALL4-red.png" alt="The mini countryman all4 red">
+                            <div class="mini_red_block_content">
+                                <h3>THE MINI CLUBMAN ALL4.</h3>
+                                <p>The most refined MINI ever made, featuring an exquisitely-crafted cabin outfitted with top-shelf finishes and cutting-edge technology. Spacious and sophisticated; premium yet practical; it’s the MINI for every occasion.</p>
+                                <button>Learn More</button>
+                                <button>Build &amp; Price</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Third content section from json file -->
+            <div class="row">
+                <div id="json_data"></div>
+            </div>
+        </div>
+    </main>
 
-        <!-- ====================  Footer section ==================== -->
-        <footer id="footer">
-            <p>&copy; Richmond Day 2019</p>
-        </footer>
-    </div>
+    <!-- ====================  Footer section ==================== -->
+    <footer id="footer">
+        <p>&copy; Richmond Day 2019</p>
+    </footer>
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- JavaScript code   -->
+    <script src="js/api.js"></script>
     <script src="js/main.js"></script>
     <script src="js/video.popup.js"></script>
 </body>

@@ -55,9 +55,7 @@ html {
     font-family: miniSerifBold;
 }
 
-/* =========================================== */
-/* ================ Header =================== */
-/* =========================================== */
+/* =================================== Header =================================== */
 #header {
     max-width: 1200px;
     margin: 0 auto;
@@ -76,14 +74,6 @@ html {
     text-align: center;
     vertical-align: middle;
 }
-
-#header_block span {
-    font-family: miniSerifRegular;
-    text-transform: uppercase;
-    font-size: 22px;
-    color: #fff;
-}
-
 #header_block h1 {
     font-family: miniSerifBold;
     text-transform: uppercase;
@@ -91,8 +81,11 @@ html {
     color: #fff;
 }
 
-#header_content {
-    margin-top: 150px;
+#header_block span {
+    font-family: miniSerifRegular;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #fff;
 }
 
 /* Video play button */
@@ -113,15 +106,8 @@ html {
     border: 4px solid rgb(105, 105, 105);
 }
 
-/* ========================================= */
-/* ================ Main =================== */
-/* ========================================= */
-/* content wrapper for the main section with 1400px width */
-#main-wrap {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
+/* ================================= Main ======================================= */
+/* hide images on desctop version */
 .mini_blue_mobile,
 .mini_red_mobile {
     display: none;
@@ -134,7 +120,7 @@ html {
 }
 
 /* Fonts for the main section conternt */
-#main_block h2 {
+#main h2 {
     font-size: 60px;
     font-family: miniSerifBold;
 }
@@ -161,7 +147,7 @@ html {
 }
 
 /* Button styles */
-#main_block button {
+section button {
     width: 150px;
     font-size: 16px;
     line-height: 12px;
@@ -177,7 +163,7 @@ html {
 }
 
 /* Button hover effect */
-#main_block button:hover {
+section button:hover {
     background-color: #535353;
 }
 
@@ -231,18 +217,28 @@ html {
             transform: translateY(-50%);
 }
 
-/* JSON section  */
-#json_container {
-    max-width: 850px;
-    margin: 0 auto;
-}
-
+/* ========================= Data from Json ========================= */
+/*https://raw.githubusercontent.com/RichmondDay/public/master/test_vehicle_inventory_data.json*/
 #json_data {
     margin-top: 100px;
 }
 
 #json_data button {
     width: 100%;
+    font-size: 16px;
+    line-height: 12px;
+    font-family: miniSerifMedium;
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#json_data button:hover {
+    background-color: #535353;
 }
 
 #json_data h3 {
@@ -291,7 +287,7 @@ html {
     padding: 5px 0;
     background-color: #e2e2e2;
 }
-
+/* ================================== Mobile ==================================== */
 @media only screen and (max-width: 767px) {
     #header {
         margin-left: 10px;
@@ -304,13 +300,13 @@ html {
         width: 100%;
         height: 150px;
     }
+    
+    #header_block h1 {
+        font-size: 22px;
+    }
 
     #header_block span {
         font-size: 18px;
-    }
-
-    #header_block h1 {
-        font-size: 22px;
     }
 
     /* Video play button */
@@ -327,7 +323,7 @@ html {
     }
 
     /* Fonts for the main section conternt */
-    #main_block h2 {
+    #main h2 {
         font-size: 36px;
     }
 
@@ -347,7 +343,7 @@ html {
     }
 
     /* Button styles */
-    #main_block button {
+    section button {
         width: 100%;
         font-size: 16px;
     }
@@ -393,10 +389,7 @@ html {
                 transform: none;
     }
 
-    #json_content_block {
-        margin: 0 20px;
-    }
-    #json_content_block h3:last-child{
+    #json_data h3:last-child{
         margin-top: 20px;
     }
 
